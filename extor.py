@@ -1,3 +1,8 @@
+'''
+goetia@sentineldr.com
+check log for TOR relays in past connections. 
+'''
+
 import urllib.request
 import sys
 import re
@@ -5,7 +10,7 @@ import re
 def main(args):    
     usage = "Usage: extor.py logfile IP_column# date_column#"
     if '-h' in args or '--help' in args:
-    	print("extor.py: check log to identify TOR relays in past connections")
+    	print("extor.py: check log for TOR relays in past connections")
     	print(usage)
     elif len(args) < 4: 
 	    print("Invalid number of arguments provided")
